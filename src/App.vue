@@ -40,7 +40,7 @@ body,
 }
 .page {
   width: calc(100% - 200px);
-  background: #e5e5e5;
+  background: #fff;
   padding: 25px;
   overflow-y: auto;
   margin-left: 200px;

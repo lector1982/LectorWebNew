@@ -20,5 +20,19 @@
 		"about6": "In addition to professionalism, in any business it is extremely important to enjoy it. And then this work will be done with the highest quality and on time. When creating websites, it is important for me not only that the customer is satisfied, but also that I myself must be satisfied with the result of my work, until then I will not be able to consider the work completed.",
 		"about7": "Thanks to this, I have a good relationship with my customers: they recommend me, they turn to my services again.",
 		"about8": "I will be glad to see you among them!"
+	},
+	"services": {
+			"service1": "Site layout",
+			"service1-text": "High-quality, valid code according to all the rules and the latest trends",
+			"service2": "CMS",
+			"service2-text": "Ready-made site with an admin panel where you can add news, products, etc.",
+			"service3": "Support",
+			"service3-text": "Support for your project, adding additional features",
+			"service4": "Design",
+			"service4-text": "Selling, stylish and high-quality design of your website",
+			"service5": "Design update",
+			"service5-text": "Updating the style of the site to the modern needs of customers",
+			"service6": "Education",
+			"service6-text": "Professional private lessons and online consultations"
 	}
 }
