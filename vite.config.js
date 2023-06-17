@@ -9,6 +9,9 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		VueI18nPlugin({
+			// strictMessage: false,
+			// warnHtmlInMessage: 'off',
+			warnHtmlMessage: false,
 			runtimeOnly: false,
 			include: resolve(dirname(fileURLToPath(import.meta.url)), './src/i18n/locales/**'),
 		})

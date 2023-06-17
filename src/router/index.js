@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouterView } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
+import AboutView from '@/views/AboutView.vue'
 import PortfolioView from '@/views/PortfolioView.vue'
 import ServicesView from '@/views/ServicesView.vue'
 import ReviewsView from '@/views/ReviewsView.vue'
@@ -20,9 +21,20 @@ const router = createRouter({
 					component: HomeView
 				},
 				{
+					path: 'about',
+					name: 'about',
+					component: AboutView,
+					meta: {
+						title: 'About'
+					}
+				},
+				{
 					path: 'portfolio',
 					name: 'portfolio',
-					component: PortfolioView
+					component: PortfolioView,
+					meta: {
+						title: 'Portfolio'
+					}
 				},
 				{
 					path: 'services',
@@ -42,5 +54,16 @@ const router = createRouter({
 			]
 		}
 	]
+})
+router.beforeEach((to, from, next) => {
+	// Get the page title from the route meta data that we have defined
+	// See further down below for how we setup this data
+	const title = to.meta.title
+	// If the route has a title, set it as the page title of the document/page
+	if (title) {
+		document.title = title
+	}
+	// Continue resolving the route
+	next()
 })
 export default router

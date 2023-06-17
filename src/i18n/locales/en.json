@@ -5,13 +5,23 @@
 			"ua": "Ukrainian"
 	},
   "nav": {
-			"home": "About",
+			"home": "Home",
+			"about": "About",
 			"portfolio": "Portfolio",
 			"services": "Services",
 			"reviews": "Reviews",
 			"contacts": "Contacts"
 	},
 	"home": {
+		"hello": "Hello! My name is",
+		"name": "Alexey Perepelka",
+		"who": "I'm a",
+		"web": "web-developer",
+		"more": "More about me",
+		"desc": "Experience since 2008. Lead teacher since 2013. I am engaged in the creation and support of sites of varying complexity: promo sites, business card sites, online stores, information portals...",
+		"desc2": "I will be glad to cooperate with you!"
+	},
+	"about": {
 		"about1": "I became interested in website development more than 13 years ago, and I have been creating websites professionally since 2008. And in all that time, I never stopped learning something new. I am constantly in search and development of interesting and beautiful solutions for websites.",
 		"about2": "From 2013 to 2022 he taught at the computer academy \"IT STEP\". He was a senior lecturer in the web direction. For several years he taught specialized Frontend courses. Also, at the request of my students, I began to record video tutorials on creating websites and post them on Youtube. You can go to my channel at the link \"LectorWeb. Frontend, website development\"",
 		"about3": "In 2020, I was invited to work as a mentor at htmlacademy.ru, both of my wards received 100 points and diplomas.",
@@ -20,6 +30,14 @@
 		"about6": "In addition to professionalism, in any business it is extremely important to enjoy it. And then this work will be done with the highest quality and on time. When creating websites, it is important for me not only that the customer is satisfied, but also that I myself must be satisfied with the result of my work, until then I will not be able to consider the work completed.",
 		"about7": "Thanks to this, I have a good relationship with my customers: they recommend me, they turn to my services again.",
 		"about8": "I will be glad to see you among them!"
+	},
+	"skills": {
+		"skill1": "Markup and programming languages:",
+		"skill2": "Frameworks, libraries and preprocessors:",
+		"skill3": "CMS - site management through the admin panel:",
+		"skill4": "Graphic editors and design:",
+		"skill5": "Server languages and databases:",
+		"skill6": "Task managers and version control:"
 	},
 	"services": {
 			"service1": "Site layout",

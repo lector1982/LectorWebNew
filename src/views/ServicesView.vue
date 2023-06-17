@@ -1,98 +1,97 @@
 <template>
-  <h1>{{ $t("nav.services") }}</h1>
-  <div class="services__container">
-    <div class="service service__layout">
-      <h4>
-        <img
-          v-svg-inline
-          class="icon"
-          src="@/assets/img/code.svg"
-          alt='$t("services.service1")'
-        />
-        <span>{{ $t("services.service1") }}</span>
-      </h4>
-      <div class="service__desc">
-        <p>{{ $t("services.service1-text") }}</p>
+  <div class="page__inner page__services">
+    <h1>{{ $t("nav.services") }}</h1>
+    <div class="services__container">
+      <div class="service service__layout">
+        <h4>
+          <img
+            v-svg-inline
+            class="icon"
+            src="@/assets/img/code.svg"
+            alt='$t("services.service1")'
+          />
+          <span>{{ $t("services.service1") }}</span>
+        </h4>
+        <div class="service__desc">
+          <p v-html="$t('services.service1-text')"></p>
+        </div>
       </div>
-    </div>
 
-    <div class="service service__cms">
-      <h4>
-        <img
-          v-svg-inline
-          class="icon"
-          src="@/assets/img/key.svg"
-          alt='$t("services.service2")'
-        />
-        <span>{{ $t("services.service2") }}</span>
-      </h4>
-      <div class="service__desc">
-        <p>{{ $t("services.service2-text") }}</p>
+      <div class="service service__cms">
+        <h4>
+          <img
+            v-svg-inline
+            class="icon"
+            src="@/assets/img/key.svg"
+            alt='$t("services.service2")'
+          />
+          <span>{{ $t("services.service2") }}</span>
+        </h4>
+        <div class="service__desc">
+          <p>{{ $t("services.service2-text") }}</p>
+        </div>
       </div>
-    </div>
 
-    <div class="service service__support">
-      <h4>
-        <img
-          v-svg-inline
-          class="icon"
-          src="@/assets/img/key.svg"
-          alt='$t("services.service2")'
-        />
-        <span>{{ $t("services.service3") }}</span>
-      </h4>
-      <div class="service__desc">
-        <p>{{ $t("services.service3-text") }}</p>
+      <div class="service service__support">
+        <h4>
+          <img
+            v-svg-inline
+            class="icon"
+            src="@/assets/img/key.svg"
+            alt='$t("services.service2")'
+          />
+          <span>{{ $t("services.service3") }}</span>
+        </h4>
+        <div class="service__desc">
+          <p>{{ $t("services.service3-text") }}</p>
+        </div>
       </div>
-    </div>
 
-    <div class="service service__design">
-      <h4>
-        <img
-          v-svg-inline
-          class="icon"
-          src="@/assets/img/brush.svg"
-          alt='$t("services.service4")'
-        />
-        <span>{{ $t("services.service4") }}</span>
-      </h4>
-      <div class="service__desc">
-        <p>{{ $t("services.service4-text") }}</p>
+      <div class="service service__design">
+        <h4>
+          <img
+            v-svg-inline
+            class="icon"
+            src="@/assets/img/brush.svg"
+            alt='$t("services.service4")'
+          />
+          <span>{{ $t("services.service4") }}</span>
+        </h4>
+        <div class="service__desc">
+          <p>{{ $t("services.service4-text") }}</p>
+        </div>
       </div>
-    </div>
 
-    <div class="service service__redesign">
-      <h4>
-        <img
-          v-svg-inline
-          class="icon"
-          src="@/assets/img/redesign.svg"
-          alt='$t("services.service5")'
-        />
-        <span>{{ $t("services.service5") }}</span>
-      </h4>
-      <div class="service__desc">
-        <p>{{ $t("services.service5-text") }}</p>
+      <div class="service service__redesign">
+        <h4>
+          <img
+            v-svg-inline
+            class="icon"
+            src="@/assets/img/redesign.svg"
+            alt='$t("services.service5")'
+          />
+          <span>{{ $t("services.service5") }}</span>
+        </h4>
+        <div class="service__desc">
+          <p>{{ $t("services.service5-text") }}</p>
+        </div>
       </div>
-    </div>
 
-    <div class="service service__education">
-      <h4>
-        <img
-          v-svg-inline
-          class="icon"
-          src="@/assets/img/education.svg"
-          alt='$t("services.service6")'
-        />
-        <span>{{ $t("services.service6") }}</span>
-      </h4>
-      <div class="service__desc">
-        <p>{{ $t("services.service6-text") }}</p>
+      <div class="service service__education">
+        <h4>
+          <img
+            v-svg-inline
+            class="icon"
+            src="@/assets/img/education.svg"
+            alt='$t("services.service6")'
+          />
+          <span>{{ $t("services.service6") }}</span>
+        </h4>
+        <div class="service__desc">
+          <p>{{ $t("services.service6-text") }}</p>
+        </div>
       </div>
     </div>
-    <!-- <div v-for="item in services" class="service">
-      {{ item.title }} - {{ item.desc }} - {{ item.color }}
-    </div> -->
   </div>
 </template>
 
@@ -113,10 +112,11 @@ export default {
 .services__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 100px;
 }
 .service {
-  width: calc(50% - 30px);
+  width: calc(30% - 30px);
   margin: 0 15px 30px;
 }
 .service h4 {

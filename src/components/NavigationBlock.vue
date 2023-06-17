@@ -1,12 +1,14 @@
 <template>
   <aside class="nav">
     <img class="logo" src="@/assets/img/logo.png" alt="LectorWeb" />
-    <img class="face" src="@/assets/img/mini-photo.jpg" alt="LectorWeb" />
     <LangSwitcher />
 
     <nav class="menu">
       <RouterLink :to="Tr.i18nRoute({ name: 'home' })">{{
         $t("nav.home")
+      }}</RouterLink>
+      <RouterLink :to="Tr.i18nRoute({ name: 'about' })">{{
+        $t("nav.about")
       }}</RouterLink>
       <RouterLink :to="Tr.i18nRoute({ name: 'portfolio' })">{{
         $t("nav.portfolio")
@@ -39,7 +41,7 @@ export default {
 <style>
 .nav {
   height: 100%;
-  width: 200px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,11 +53,6 @@ export default {
 }
 .logo {
   width: 100px;
-  margin-bottom: 30px;
-}
-.face {
-  width: 100px;
-  height: 100px;
   margin-bottom: 30px;
 }
 .lang {
@@ -92,11 +89,12 @@ export default {
   text-align: center;
   margin: 4px 0;
   position: relative;
+  font-weight: 500;
 }
 .menu a::before,
 .menu a::after {
   position: absolute;
-  top: -15px;
+  top: -13px;
   opacity: 0;
   font-size: 36px;
 }
